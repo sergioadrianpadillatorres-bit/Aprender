@@ -93,12 +93,13 @@
   
   /* Responsive */
 
-  @media (max-width: 350px) {
-    .contenido {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+  @media (max-width: 400px) {
+    .banner h1 {
+      font-size: 2rem;
+      text-align: center;
     }
+  
+  
   
     .imagenes {
       flex-direction: row;
