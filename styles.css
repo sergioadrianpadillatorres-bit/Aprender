@@ -1,96 +1,89 @@
 :root {
-    --color-banner: #750dd6; 
-    --color-texto-banner:rgb(255, 254, 254);
+    --color-banner: #750dd6; /* cámbialo a #87cefa si lo quieres azul claro */
+    --color-texto-banner: rgb(255, 254, 254);
     --color-texto: #333333;
     --color-whatsapp: #25D366;
     --color-facebook: #1877F2;
     --fuente-principal: Arial, sans-serif;
-}
-body {
+  }
+  
+  body {
     margin: 0;
     font-family: var(--fuente-principal);
     color: var(--color-texto);
-}
-
-/* Banner */
-.banner {
+  }
+  
+  /* Banner */
+  .banner {
     background-color: var(--color-banner);
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start; /* antes: left (no válido) */
     padding: 15px;
     gap: 15px;
-}
-
-.banner h1 {
+  }
+  
+  .banner h1 {
     margin: 0;
     font-size: 2.5rem;
-    color:var(--color-texto-banner);
-}
-
-/* Logo */
-.logo {
+    color: var(--color-texto-banner);
+  }
+  
+  /* Logo */
+  .logo {
     height: 100px;
     width: auto;
-}
-
-/* Contenido */
-.contenido {
+  }
+  
+  /* Contenido */
+  .contenido {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
-}
-
-.texto {
+  }
+  
+  .texto {
     max-width: 350px;
-}
-
-.imagenes {
+  }
+  
+  .imagenes {
     display: flex;
     gap: 10px;
-}
-
-.imagenes img {
+  }
+  
+  .imagenes img {
     width: 200px;
     border-radius: 8px;
-}
-
-/* Botones de contacto */
-.contacto {
+  }
+  
+  /* Botones de contacto */
+  .contacto {
     display: flex;
     justify-content: center;
     gap: 15px;
     padding: 20px;
-}
-
-.contacto a {
+  }
+  
+  .contacto a {
     padding: 10px 20px;
     border-radius: 5px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-
-.btn-whatsapp {
-    background-color: var(--color-whatsapp);
-}
-
-.btn-facebook {
-    background-color: var(--color-facebook);
-}
-
-/* Responsive */
-@media (max-width: 400px) {
+  }
+  
+  .btn-whatsapp { background-color: var(--color-whatsapp); }
+  .btn-facebook { background-color: var(--color-facebook); }
+  
+  /* Responsive */
+  @media (max-width: 400px) {
     .contenido {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-    .imagenes {
-        flex-direction: column;
-    }
-    .banner {
-        flex-direction: column;
-    }
-}
+    .imagenes { flex-direction: column; }
+    .banner { flex-direction: column; }
+  }
+  
