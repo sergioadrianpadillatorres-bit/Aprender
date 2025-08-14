@@ -1,10 +1,11 @@
 :root {
-    --color-banner: #750dd6; /* cámbialo a #87cefa si lo quieres azul claro */
+    --color-banner: #2c0452; /* cámbialo a #87cefa si lo quieres azul claro */
     --color-texto-banner: rgb(255, 254, 254);
     --color-texto: #333333;
     --color-whatsapp: #25D366;
     --color-facebook: #1877F2;
-    --fuente-principal: Arial, sans-serif;
+    --fuente-principal:'Angelface' Arial, sans-serif;
+    
     
   }
   
@@ -12,9 +13,14 @@
     margin: 0;
     font-family: var(--fuente-principal);
     color: var(--color-texto);
+    background-color: #f1f7a5dc;
   }
   h2{
     text-align: center;
+  }
+  h3{
+    text-align: center;
+    
   }
   p{
     text-align:justify ;
@@ -25,14 +31,14 @@
     background-color: var(--color-banner);
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* antes: left (no válido) */
+    justify-content: flex-start; 
     padding: 15px;
     gap: 15px;
   }
   
   .banner h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--color-texto-banner);
   }
 
@@ -86,7 +92,8 @@
   .btn-facebook { background-color: var(--color-facebook); }
   
   /* Responsive */
-  @media (max-width: 300px) {
+
+  @media (max-width: 350px) {
     .contenido {
       flex-direction: row;
       align-items: center;
@@ -108,11 +115,11 @@
     .banner img.logo {
       max-width: 40px; /* Logo más pequeño para pantallas pequeñas */
       height: auto;
-      margin-right: 8px;
+      margin-right: px;
     }
   
     .banner h1 {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       text-align: left;
     }
   }
