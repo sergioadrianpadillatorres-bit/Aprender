@@ -16,6 +16,9 @@
   h2{
     text-align: center;
   }
+  p{
+    text-align:justify ;
+  }
   
   /* Banner */
   .banner {
@@ -83,12 +86,35 @@
   .btn-facebook { background-color: var(--color-facebook); }
   
   /* Responsive */
-  @media (max-width: 350px) {
+  @media (max-width: 300px) {
     .contenido {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      justify-content: center;
     }
-    .imagenes { flex-direction: column; }
-    .banner { flex-direction: column; }
+  
+    .imagenes {
+      flex-direction: row;
+      flex-wrap: wrap; /* Para que las imágenes bajen si no hay espacio */
+      justify-content: center;
+    }
+  
+    .banner {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .banner img.logo {
+      max-width: 40px; /* Logo más pequeño para pantallas pequeñas */
+      height: auto;
+      margin-right: 8px;
+    }
+  
+    .banner h1 {
+      font-size: 1.2rem;
+      text-align: left;
+    }
   }
+  
   
