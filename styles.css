@@ -5,12 +5,16 @@
     --color-whatsapp: #25D366;
     --color-facebook: #1877F2;
     --fuente-principal: Arial, sans-serif;
+    
   }
   
   body {
     margin: 0;
     font-family: var(--fuente-principal);
     color: var(--color-texto);
+  }
+  h2{
+    text-align: center;
   }
   
   /* Banner */
@@ -28,10 +32,11 @@
     font-size: 2.5rem;
     color: var(--color-texto-banner);
   }
+
   
   /* Logo */
   .logo {
-    height: 100px;
+    height: 210px;
     width: auto;
   }
   
@@ -78,7 +83,7 @@
   .btn-facebook { background-color: var(--color-facebook); }
   
   /* Responsive */
-  @media (max-width: 400px) {
+  @media (max-width: 350px) {
     .contenido {
       flex-direction: column;
       align-items: center;
