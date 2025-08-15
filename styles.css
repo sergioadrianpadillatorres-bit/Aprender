@@ -1,11 +1,11 @@
 :root {
-    --color-banner: #2c0452; 
-    --color-texto-banner: rgb(255, 254, 254);
+    --color-banner: #ffffff; 
+    --color-texto-banner: rgb(0, 0, 0);
     --color-texto: #333333;
     --color-whatsapp: #25D366;
     --color-facebook: #1877F2;
     --fuente-principal:'Angelface' Arial, sans-serif;
-    
+    --color-menu:#f1f7a5dc;
     
   }
   
@@ -13,7 +13,7 @@
     margin: 0;
     font-family: var(--fuente-principal);
     color: var(--color-texto);
-    background-color: #f1f7a5dc;
+    background-color: #f7f7f7dc;
   }
   h2{
     text-align: center;
@@ -24,6 +24,7 @@
   }
   p{
     text-align:justify ;
+    font-size: 1.1rem;
   }
   
   /* Banner */
@@ -31,7 +32,7 @@
     background-color: var(--color-banner);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
     padding: 10px;
   }
@@ -48,6 +49,57 @@
     height: 200px;
     width: auto;
   }
+
+/* Botón Menú */
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: var(--color-texto);
+    cursor: pointer;
+    z-index: 2000;
+}
+
+/* Menú lateral */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -220px;
+    width: 150px;
+    height: 50%;
+    background-color: var(--color-menu);
+    color: var(--color-menu-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    z-index: 1500;
+}
+
+.menu a {
+    color: var(--color-menu-texto);
+    text-decoration: none;
+    padding: 12px 20px;
+    width: 50%;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: rgba(10, 10, 10, 0.1);
+}
+
+/* Estado activo */
+.menu.activo {
+    right: 0;
+}
+
+/* Contenido */
+.contenido {
+    padding: 20px;
+}
+  
   
   /* Contenido */
   .contenido {
@@ -96,8 +148,13 @@
 
   @media (max-width: 500px) {
     .banner h1 {
-      font-size: 2rem;
-      text-align: center;
+      font-size: 3rem;
+      text-align: centerle;
+    }
+    .menu{
+        right: -220px;
+    width: 150px;
+    height: 25%;
     }
   }
   
