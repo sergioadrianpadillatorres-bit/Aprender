@@ -4,14 +4,15 @@
     --color-texto: #333333;
     --color-whatsapp: #25D366;
     --color-facebook: #1877F2;
-    --fuente-principal:'Angelface' Arial, sans-serif;
-    --color-menu:#f1f7a5dc;
+    --tipo-letra:'Angelface' Arial, sans-serif;
+    --color-menu:#f5e7b2eb;
+    --tamaño-texto:1.1rem;
     
   }
   
   body {
     margin: 0;
-    font-family: var(--fuente-principal);
+    font-family: var(--tipo-letra);
     color: var(--color-texto);
     background-color: #f7f7f7dc;
   }
@@ -24,7 +25,7 @@
   }
   p{
     text-align:justify ;
-    font-size: 1.1rem;
+    font-size: var(--tamaño-texto);
   }
   
   /* Banner */
@@ -54,8 +55,9 @@
 .menu-toggle {
     position: fixed;
     top: 15px;
-    right: 20px;
+    right: 30px;
     font-size: 24px;
+    size: var(--fuente-principal);
     color: var(--color-texto);
     cursor: pointer;
     z-index: 2000;
@@ -84,7 +86,7 @@
 .menu a {
     color: var(--color-menu-texto);
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 15px 50px;
     width: 50%;
     display: block;
 }
@@ -100,33 +102,28 @@
 
 /* Contenido */
 .contenido {
-    padding: 20px;
+  padding: 20px;
+  max-width: 900px;   /* ancho máximo en PC */
+  margin: 0 auto;     /* centra horizontalmente */
+  text-align: justify;
 }
-  
-  
-  /* Contenido */
-  .contenido {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    justify-content: center;
-  }
-  
-  .texto {
-    max-width: 300px;
-  }
-  
-  .imagenes {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .imagenes img {
-    width: 200px;
-    height: auto;
 
-  }
+.texto {
+  max-width: 100%;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center; /* centra imágenes */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.imagenes img {
+  width: 250px;
+  height: auto;
+}
+
   
   /* Botones de contacto */
   .contacto {
@@ -144,8 +141,7 @@
     font-weight: bold;
   }
   
-  .btn-whatsapp { background-color: var(--color-whatsapp); }
-  .btn-facebook { background-color: var(--color-facebook); }
+
   
   /* Responsive */
 
@@ -159,6 +155,14 @@
     width: 150px;
     height: 30%;
     }
+    .menu a {
+      color: var(--color-menu-texto);
+      text-decoration: none;
+      padding: 15px 50px;
+      width: 50%;
+      display: block;
+  }
+
   }
   
   

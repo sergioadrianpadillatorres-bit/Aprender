@@ -1,0 +1,44 @@
+
+
+
+
+.btn-whatsapp {
+    position: fixed; /* Siempre visible */
+    bottom: 20px; /* Distancia desde abajo */
+    right: 5px; /* Distancia desde la derecha */
+    z-index: 2000; /* Encima de otros elementos */
+    display: inline-block;
+  }
+  
+  .btn-whatsapp img {
+    width: 50px; /* Tamaño del icono (puedes cambiarlo) */
+    height: 50px;
+    border-radius: 50%; /* Redondo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra */
+    transition: transform 0.2s ease; /* Animación al pasar el mouse */
+  }
+  
+  .btn-whatsapp img:hover {
+    transform: scale(1.1); /* Zoom al pasar el mouse */
+  }
+  
+
+  @media (max-width: 500px) {
+    .btn-whatsapp {
+        position: fixed; /* Siempre visible */
+        bottom: 40px; /* Distancia desde abajo */
+        right: 5px; /* Distancia desde la derecha */
+        z-index: 2000; /* Encima de otros elementos */
+        display: inline-block;
+      }
+      .btn-whatsapp img {
+        width: 30px; /* Tamaño del icono (puedes cambiarlo) */
+        height: 30px;
+        border-radius: 50%; /* Redondo */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra */
+        transition: transform 0.2s ease; /* Animación al pasar el mouse */
+      }
+      .btn-whatsapp img:hover {
+        transform: scale(1.1); /* Zoom al pasar el mouse */
+      }
+  }
