@@ -1,5 +1,5 @@
 :root {
-    --color-banner: #2c0452; /* cámbialo a #87cefa si lo quieres azul claro */
+    --color-banner: #2c0452; 
     --color-texto-banner: rgb(255, 254, 254);
     --color-texto: #333333;
     --color-whatsapp: #25D366;
@@ -31,9 +31,9 @@
     background-color: var(--color-banner);
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
-    padding: 15px;
-    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
   }
   
   .banner h1 {
@@ -45,7 +45,7 @@
   
   /* Logo */
   .logo {
-    height: 210px;
+    height: 200px;
     width: auto;
   }
   
@@ -59,7 +59,7 @@
   }
   
   .texto {
-    max-width: 350px;
+    max-width: 300px;
   }
   
   .imagenes {
@@ -69,7 +69,8 @@
   
   .imagenes img {
     width: 200px;
-    border-radius: 8px;
+    height: auto;
+
   }
   
   /* Botones de contacto */
@@ -93,35 +94,10 @@
   
   /* Responsive */
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     .banner h1 {
       font-size: 2rem;
       text-align: center;
-    }
-  
-  
-  
-    .imagenes {
-      flex-direction: row;
-      flex-wrap: wrap; /* Para que las imágenes bajen si no hay espacio */
-      justify-content: center;
-    }
-  
-    .banner {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .banner img.logo {
-      max-width: 40px; /* Logo más pequeño para pantallas pequeñas */
-      height: auto;
-      margin-right: px;
-    }
-  
-    .banner h1 {
-      font-size: 1.5rem;
-      text-align: left;
     }
   }
   
