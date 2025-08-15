@@ -1,5 +1,5 @@
 :root {
-    --color-banner: #ffffff; 
+    --color-banner: #dbbbeec0; 
     --color-texto-banner: rgb(0, 0, 0);
     --color-texto: #333333;
     --color-whatsapp: #25D366;
@@ -46,7 +46,7 @@
   
   /* Logo */
   .logo {
-    height: 200px;
+    height: 150px;
     width: auto;
   }
 
@@ -76,6 +76,9 @@
     padding-top: 60px;
     transition: right 0.3s ease;
     z-index: 1500;
+}
+.direcion{
+
 }
 
 .menu a {
