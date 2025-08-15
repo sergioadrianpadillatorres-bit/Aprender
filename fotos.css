@@ -1,34 +1,33 @@
-.fotos img {
-    width: 300px;     /* Cambia este valor como quieras */
-    height: auto;     /* Mantiene proporciones originales */
-    border-radius: 10px; /* opcional, bordes redondeados */
-    
-  }
-  .fotos {
-    display: flex;           /* coloca imagen y texto en una fila */
-    align-items: center;     /* alinea verticalmente */
-    gap: 20px;               /* espacio entre imagen y texto */
-    max-width: 900px;        /* ancho máximo */
-    margin: 0 auto;          /* centrar */
+.fotos {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px; /* Espacio entre imagen y texto */
+    margin-bottom: 20px;
 }
 
 .fotos img {
-    width: 200px;            /* tamaño de la imagen */
+    width: 150px; /* Ajusta el tamaño de la imagen */
     height: auto;
-    border-radius: 8px;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+    border-radius: 5px; /* Opcional, esquinas redondeadas */
 }
 
 .fotos p {
-    text-align: justify;     /* texto justificado */
-    flex: 1.5;                  /* ocupa el resto del espacio */
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
+/* Versión responsive para celular */
+@media (max-width: 768px) {
+    .fotos {
+        flex-direction: column; /* Imagen arriba, texto abajo */
+        align-items: center;
+        text-align: center;
+    }
 
-
-@media (max-width: 500px) {
     .fotos img {
-    max-width: 100%;  /* Nunca más grande que su contenedor */
-    height: auto;
-      }
-
-  }
+        width: 100%;
+        max-width: 250px; /* Tamaño máximo en celular */
+    }
+}
